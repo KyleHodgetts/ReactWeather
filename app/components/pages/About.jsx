@@ -3,7 +3,7 @@ import React from 'react';
 export default () => {
   return (
     <div className="text-center">
-      <h1>About</h1>
+      <h1 className="page-title">About</h1>
       <blockquote>
         This weather application was built by Kyle Hodgetts while undertaking
         the <a target="_blank" href="https://www.udemy.com/the-complete-react-web-app-developer-course/">Complete React Developer Course</a> on Udemy.
