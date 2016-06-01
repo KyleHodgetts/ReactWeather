@@ -3,10 +3,10 @@ import { Link } from 'react-router';
 
 export default () => {
   return (
-    <div>
-      <h1 className="text-center">Examples</h1>
+    <div className="text-center">
+      <h1>Examples</h1>
       <p>A few example locations for you to try out</p>
-      <ol>
+      <ol className="no-bullet">
         <li>
           <Link to='/?location=london'>London</Link>
         </li>
