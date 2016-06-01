@@ -13,12 +13,31 @@ export default class Weather extends React.Component {
     };
   }
 
+  componentDidMount = () => {
+    const location = this.props.location.query.location;
+    this.handleTriggerSearch(location);
+  }
+
+  componentWillReceiveProps = (newProps) => {
+    const location = newProps.location.query.location;
+    this.handleTriggerSearch(location);
+  }
+
+  handleTriggerSearch = (location) => {
+    if (location && location.length > 0) {
+      this.handleSearch(location);
+      window.location.hash = '#/';
+    }
+  }
+
   handleSearch = (location) => {
     let _this = this;
 
     this.setState({
       isLoading: true,
-      errorMessage: undefined
+      errorMessage: undefined,
+      location: undefined,
+      temp: undefined
     });
 
     openWeatherMap.getTemp(location).then( function (temp) {

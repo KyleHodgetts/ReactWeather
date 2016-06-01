@@ -8,10 +8,10 @@ export default () => {
       <p>A few example locations for you to try out</p>
       <ol className="no-bullet">
         <li>
-          <Link to='/?location=london'>London</Link>
+          <Link to='/?location=London'>London</Link>
         </li>
         <li>
-          <Link to="/?location=warsaw">Warsaw, PL</Link>
+          <Link to="/?location=Warsaw">Warsaw, PL</Link>
         </li>
       </ol>
     </div>
