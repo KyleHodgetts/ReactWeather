@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => { return (<h3>Examples Component</h3>); }
+export default () => {
+  return (<h3>Examples</h3>); 
+}
